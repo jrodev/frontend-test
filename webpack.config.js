@@ -10,7 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'), //__dirname + '/dist',
         filename: '[name].js',
-        //chunkFilename: '[id].[chunkhash].js'
+        chunkFilename: '[id].[chunkhash].js'
     },
     module: {
         loaders: [
@@ -25,10 +25,11 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            filename: '../index.html',
+            filename: 'index.html',
             title: 'Test FrontEnd',
             template: './template/layout.ejs'
         }),
         new DynamicCdnWebpackPlugin()
     ]
+
 }

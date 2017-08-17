@@ -1,6 +1,6 @@
 module.exports = {
     saludar: function (name) {
-        return "Hola: " + name;
+        return "Hola : " + name;
     },
     sortArray: function (array) {
     	var menor=0;
