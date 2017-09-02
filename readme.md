@@ -4,8 +4,10 @@ Caracteristicas y requisitos:
 
  * Solucion usando Webpack
  * Tener instalado node y npm
- * Ejecutar *npm install* desde el directorio raiz ./
- * Tambien es posible probar directamente la solucion ejecutando el archivo index.html en el browser que carga el archivo bundle que es generado por la aplicación.
+ * Ejecutar **npm install** desde el directorio raiz ./ (Esto preinstalara **webpack globlamente**).
+  La dependecia **webpack-dev-server** esta como **dependencia de desarrollo** dentro de *package.json*
+ * Despues de ello ejecutar: **npm run dev** esto ejecutara la definicion dentro de *package.json* en la sección *scripts: { dev: "...",  }*
+ * Tambien es posible probar directamente la solucion ejecutando el archivo index.html en el browser que carga el archivo bundle que es generado por la aplicación. Para ello se debe ejecutar **webpack** a nivel de raiz del directorio, previamente.
 
 
 ```html
